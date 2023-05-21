@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Random Quote Machine | Hilda Can Code</title>
+    <title>Random Quote Machine | ThuyenCode</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src=""></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+        integrity="sha512-ZnR2wlLbSbr8/c9AgLg3jQPAattCUImNsae6NHYnS9KrIwRdcY9DxFotXhNAKIKbAXlRnujIqUWoXXwqyFOeIQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+        integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script defer src="index.js"></script>
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </head>
+
 <body>
+    <nav>
+
+    </nav>
+    <div class="flex-container flex-col flex-center">
+        <article id="quote-box" class="smol-responsive-padding">
+            <blockquote>
+                <p id="text">
+                    <i class="bi bi-quote"></i>
+                    <span id="content">Sometime all we need is sit down and wait</span>
+                </p>
+                <cite id="author">Querying the API</cite>
+            </blockquote>
+            <div class="flex-container flex-between">
+                <button id="new-quote" class="button" onclick="newQuote()">New quote</button>
+                <div>
+                    <a class="button" id="tweet-quote" title="Tweet this quote!" target="_top"
+                        href="https://twitter.com/intent/tweet?hashtags=quotes&amp;related=freecodecamp&amp;text=%22In%20order%20to%20succeed%2C%20your%20desire%20for%20success%20should%20be%20greater%20than%20your%20fear%20of%20failure.%22%20Bill%20Cosby">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+                    <button id="save-quote" class="button" onclick="saveQuote()">
+                        <i class="bi bi-arrow-down"></i>
+                        Save this quote
+                    </button>
+                </div>
+            </div>
+        </article>
+    </div>
 </body>
+
 </html>
