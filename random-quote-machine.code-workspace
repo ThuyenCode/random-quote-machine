@@ -1,8 +1,36 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	],
-	"settings": {}
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "prettier.configPath": ".prettierrc",
+    "prettier.prettierPath": "./node_modules/prettier",
+    "files.associations": {
+      "*.css": "tailwindcss",
+      "*.scss": "tailwindcss"
+    },
+    "editor.quickSuggestions": {
+      "strings": true
+    },
+    "tailwindCSS.emmetCompletions": true,
+    "tailwindCSS.classAttributes": [
+      "class",
+      "className",
+      "ngClass",
+      "defaultProps",
+      "styles"
+    ]
+  },
+  "extensions": {
+    "recommendations": [
+      "idered.npm",
+      "christian-kohler.npm-intellisense",
+      "moalamri.inline-fold",
+      "dbaeumer.vscode-eslint",
+      "formulahendry.auto-rename-tag",
+      "bradlc.vscode-tailwindcss"
+    ]
+  }
 }

@@ -1,13 +1,27 @@
-# Random Quote Machine
+# React + TypeScript + Vite
 
-![jQuery](https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white) ![Bootstrap](https://img.shields.io/badge/Bootstrap%20Icons-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white) ![HTML2Canvas](https://img.shields.io/badge/HTML2Canvas-239120?style=for-the-badge&logo=html5&logoColor=white)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-My project for [freeCodeCamp](https://www.freecodecamp.org/learn/front-end-development-libraries): **A simle website that return random quote from [Quotable](https://github.com/lukePeavey/quotable) and randomly change color too**.
+Currently, two official plugins are available:
 
-Mainly built with:
-* [jQuery](https://jquery.com/)
-* [HTML2Canvas](https://html2canvas.hertzen.com)
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-Some tiny components:
-* [Bootstrap Icons](https://icons.getbootstrap.com)
-* [Google Fonts](https://fonts.google.com)
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+
+- Configure the top-level `parserOptions` property like this:
+
+```js
+   parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+    project: ['./tsconfig.json', './tsconfig.node.json'],
+    tsconfigRootDir: __dirname,
+   },
+```
+
+- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
+- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
