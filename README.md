@@ -1,27 +1,13 @@
-# React + TypeScript + Vite
+# Random Quote Machine | A project for freeCodeCamp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![freeCodeCamp](https://img.shields.io/badge/Built%20for-freeCodeCamp-1f425f.svg?style=for-the-badge&logo=freecodecamp&logoColor=white)](https://www.freecodecamp.org/learn/front-end-development-libraries/front-end-development-libraries-projects)
 
-Currently, two official plugins are available:
+This project is a simple website that returns a random quote from [Quotable](https://github.com/lukePeavey/quotable) and also changes color randomly.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Tech stack:
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+- [TypeScript](https://typescriptlang.org)
+- [React](https://react.dev)
+- [HTML2Canvas](https://html2canvas.hertzen.com)
+- [Bootstrap Icons](https://icons.getbootstrap.com)
+- [Google Fonts](https://fonts.google.com)
