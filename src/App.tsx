@@ -1,7 +1,11 @@
+import Blockquote from './components/Blockquote'
+import { Controls } from './components/Controls'
+
 export default function App() {
   return (
-    <h1 className="text-3xl font-bold underline">
-      Hello world!
-    </h1>
+    <article className='max-w-lg space-y-5 rounded bg-white p-4' id='quote-box'>
+      <Blockquote />
+      <Controls />
+    </article>
   )
 }

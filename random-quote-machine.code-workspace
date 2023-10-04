@@ -21,6 +21,13 @@
       "ngClass",
       "defaultProps",
       "styles"
+    ],
+    "cSpell.words": [
+      "Cantarell",
+      "Neue",
+      "Roboto",
+      "Segoe",
+      "Titillium"
     ]
   },
   "extensions": {
@@ -30,7 +37,8 @@
       "moalamri.inline-fold",
       "dbaeumer.vscode-eslint",
       "formulahendry.auto-rename-tag",
-      "bradlc.vscode-tailwindcss"
+      "bradlc.vscode-tailwindcss",
+      "zignd.html-css-class-completion"
     ]
   }
 }

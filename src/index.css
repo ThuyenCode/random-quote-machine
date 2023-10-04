@@ -1,3 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --main-color: #1a1a1a;
+}
+
+[data-theme='cornflowerblue'] {
+  --main-color: #7ea3e7;
+}
+
+[data-theme='steelblue'] {
+  --main-color: #399ada;
+}
+
+[data-theme='mediumturquoise'] {
+  --main-color: #3cc8b8;
+}
+
+[data-theme='lightseagreen'] {
+  --main-color: #4ca49a;
+}
+
+[data-theme='mediumpurple'] {
+  --main-color: #a183ed;
+}
+
+[data-theme='black'] {
+  --main-color: #15171e;
+}
+
+[data-theme='darkslateblue'] {
+  --main-color: #3b4b81;
+}
+
+[data-theme='darksalmon'] {
+  --main-color: #efae94;
+}
+
+[data-theme='cadetblue'] {
+  --main-color: #6aa1a8;
+}
+
+[data-theme='salmon'] {
+  --main-color: #e15f50;
+}
+
+@layer components {
+  .color-data-theme {
+    @apply text-[--main-color] transition duration-500;
+  }
+
+  .bg-data-theme {
+    @apply bg-[--main-color] transition duration-500;
+  }
+}
